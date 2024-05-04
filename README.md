@@ -35,4 +35,24 @@ mylib/__init__.py
 3. populate 'Makefile' so you can put these steps into the makefile
 you can run on the command line by typing make all
 
+commit all your code to your repo...
 
+3 . adding to the requirements file
+wikipedia using wikipedia tool
+pytest      we are going to need to test our code
+pytest-cov  coverage tool- which will give us how many lines of code are covered
+pylint      linting tool
+black       formatting tool
+fire        you can uuse this to map a function into a command line tool
+
+put all these into a makefile
+
+4.  inside the make file put the following commands 
+    
+    pip install --upgrade pip &&\
+		pip install -r requirements.txt
+
+then on the command line run make install, which then install all the packages required for the build
+
+5. Then we run a pip freeze | less
+this will show all the packages with their version numbers and then we can then append those to the packages into the requirements.txt file
