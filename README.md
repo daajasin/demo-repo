@@ -56,3 +56,19 @@ then on the command line run make install, which then install all the packages r
 
 5. Then we run a pip freeze | less
 this will show all the packages with their version numbers and then we can then append those to the packages into the requirements.txt file
+
+ensuring your versions always run is a big win
+
+6. Go to github actions on the main github menu and setup 
+  See github actions for the actions in there you want to make to the project
+edit the github actions file and then push it to the commit and then it runs the build file.
+
+This is from the status badge
+[![Python application test with GitHub Actions](https://github.com/daajasin/demo-repo/actions/workflows/Devops.yml/badge.svg)](https://github.com/daajasin/demo-repo/actions/workflows/Devops.yml)
+
+
+7. COntinue to follow the Makefile.
+### Format the code
+
+add the following lines under the #format code
+black *.py mylib/*.py
