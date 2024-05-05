@@ -83,3 +83,10 @@ pylint --disable=R,C *.py mylib/*.py
 this can catch code bugs not necessarily 
 
 edit your devops.yml file under the #make lint
+
+this can show up in your build actions step showing the warning it will generate from the command to lint if there is a problemm with it.
+If there is an error you can screen shot it and add it to this file as a record.
+
+10. Go to the next step of the makefile
+add a build step and add a container
+#build container
