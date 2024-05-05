@@ -72,3 +72,14 @@ This is from the status badge
 
 add the following lines under the #format code
 black *.py mylib/*.py
+
+8. git commit, pull and push all updates to the file.
+check build process in the github actions tab to see how the build is going to make sure nothing is broken.
+
+9. Add linting in to the Makefile
+add this line into the file
+pylint --disable=R,C *.py mylib/*.py
+
+this can catch code bugs not necessarily 
+
+edit your devops.yml file under the #make lint
