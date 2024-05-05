@@ -94,3 +94,5 @@ add a build step and add a container
 11. Pytest in the makefile
 python -m pytest -vv cov=mylib test_logic.py
 
+12. build a command line tool using the python fire library
+this will test the logic before we go a a microservice
