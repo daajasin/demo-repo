@@ -90,3 +90,7 @@ If there is an error you can screen shot it and add it to this file as a record.
 10. Go to the next step of the makefile
 add a build step and add a container
 #build container
+
+11. Pytest in the makefile
+python -m pytest -vv cov=mylib test_logic.py
+
